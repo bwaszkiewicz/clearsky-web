@@ -28,5 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploy
 
-ng build --prod --output-path ***project*** --base-href "https://romanshutsman.github.io/***project***/"
+ng build --prod --output-path ***project*** --base-href "https://romanshutsman.github.io/"***project***"/"
 ngh --dir=dist/***project***
