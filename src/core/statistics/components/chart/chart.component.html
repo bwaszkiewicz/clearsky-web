@@ -1,0 +1,21 @@
+
+    <div class="row mt-4">
+        <div class="col-sm-10">
+                <div *ngIf="chartPM10">
+                        <canvas id="canvasPM10" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;">{{ chart }} </canvas>
+                </div>
+        </div>
+        <div class="col-sm-2 align-self-end" >
+                <button type="button" class="btn btn-primary" (click)="getPM10DataPoints()">Refresh</button>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-10">
+                <div *ngIf="chartPM25">
+                        <canvas id="canvasPM25" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;">{{ chart }} </canvas>
+                </div>
+        </div>
+        <div class="col-sm-2 align-self-end">
+                <button type="button" class="btn btn-primary" (click)="getPM25DataPoints()">Refresh</button>
+        </div>
+      </div>
