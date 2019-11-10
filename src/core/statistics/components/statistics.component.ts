@@ -68,7 +68,9 @@ export class StatisticsComponent implements OnInit {
             this.calculateAqi(startDateStr, endDateStr);
           } else {
             this.AqiPM10 = -1;
+            this.AqiPM10Str = 'Unknown';
             this.AqiPM25 = -1;
+            this.AqiPM25Str = 'Unknown';
           }
         });
       }

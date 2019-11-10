@@ -72,10 +72,18 @@ export class ChartComponent implements OnInit {
         },
          scales: {
            xAxes: [{
-             display: true
+             display: true,
+             scaleLabel: {
+              display: true,
+              labelString: 'Date'
+             }
            }],
            yAxes: [{
-             display: true
+             display: true,
+             scaleLabel: {
+              display: true,
+              labelString: 'µg/m3'
+             }
            }]
          }
        }
@@ -105,10 +113,18 @@ export class ChartComponent implements OnInit {
           },
           scales: {
             xAxes: [{
-              display: true
+              display: true,
+              scaleLabel: {
+               display: true,
+               labelString: 'Date',
+              }
             }],
             yAxes: [{
-              display: true
+              display: true,
+              scaleLabel: {
+               display: true,
+               labelString: 'µg/m3'
+              }
             }]
           }
         }
