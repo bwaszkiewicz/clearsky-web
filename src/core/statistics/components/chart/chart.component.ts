@@ -40,10 +40,10 @@ export class ChartComponent implements OnInit {
      });
   }
 
-  getPM25DataPoints(){
+  getPM25DataPoints() {
     this.statisticsService.getAllP10Measurement().subscribe((res: Measurments) => {
       this.dates = res['feeds'].map(res => res.created_at);
-      this.pm10 = res['feeds'].map(res => res.field1);
+      this.pm10 = res['feeds'].map(res => res.field2);
 
       this.showPM25Chart();
      });
@@ -90,7 +90,7 @@ export class ChartComponent implements OnInit {
      });
     }
 
-    showPM25Chart(){
+    showPM25Chart() {
       this.chartPM25 = new Chart('canvasPM25', {
         type: 'line',
         data: {
