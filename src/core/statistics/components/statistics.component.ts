@@ -28,6 +28,7 @@ export class StatisticsComponent implements OnInit {
     this.checkAqi();
 
     setInterval(() => {this.getLastUpdate(); }, 5000);
+    setInterval(() => {this.checkAqi(); }, 5 * 60 * 1000);
   }
 
   getLastUpdate() {
