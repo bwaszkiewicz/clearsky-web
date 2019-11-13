@@ -41,7 +41,7 @@ export class ChartComponent implements OnInit {
   }
 
   getPM25DataPoints() {
-    this.statisticsService.getAllP10Measurement().subscribe((res: Measurments) => {
+    this.statisticsService.getAllP25Measurement().subscribe((res: Measurments) => {
       this.dates = res['feeds'].map(res => res.created_at);
       this.pm25 = res['feeds'].map(res => res.field2);
 
