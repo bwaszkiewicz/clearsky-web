@@ -12,12 +12,6 @@ export class StatisticsService {
 
   constructor(private http: HttpClient) { }
 
-  private testUrl = 'https://api.thingspeak.com/channels/904995/feeds.json?api_key=I2HBGAJULLCCRRYY&results=1';
-
-  getData() {
-    return this.http.get<Data>(`${this.testUrl}`);
-  }
-
   getAllP10Measurement() {
     return this.http.get<Measurments>(Globals.API_URL + `/fields/1.json?api_key=I2HBGAJULLCCRRYY`);
   }
